@@ -16,4 +16,4 @@ concurrency:
 jobs:
   checkstyle:
     name: "TG/TF CI"
-    uses: qhrtech/gh-workflow-terraform-stylecheck/.github/workflows/ci.yml@testing
+    uses: qhrtech/gh-workflow-terraform-stylecheck/.github/workflows/ci.yml@v1
