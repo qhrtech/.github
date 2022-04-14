@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches:
+    - "master"
+    - "main"
+    - "releases/*"
+    - "features/*"
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checkstyle:
+    name: "TG/TF CI"
+    uses: qhrtech/gh-workflow-terraform-stylecheck/.github/workflows/ci.yml@testing

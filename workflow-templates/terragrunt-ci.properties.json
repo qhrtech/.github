@@ -1,0 +1,7 @@
+{
+    "name": "QHR Terragrunt/Terraform CI",
+    "description": "QHR Terragrunt/Terraform Code Style CI",
+    "categories": [
+        "HCL"
+    ]
+}
