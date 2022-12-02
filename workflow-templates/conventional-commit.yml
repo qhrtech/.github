@@ -16,4 +16,7 @@ jobs:
         with:
           requireScope: true
         env:
+          # The workflow permissions need to be set to "read and write permissions", because
+          # otherwise the token isn't granted read permissions to pull-requests:
+          # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
