@@ -16,4 +16,4 @@ jobs:
     name: Validate PR title
     runs-on: ubuntu-latest
     steps:
-      - uses: qhrtech/gh-action-semantic-release@v1
+      - uses: qhrtech/gh-action-semantic-pull-request@v1
