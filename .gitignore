@@ -1,0 +1,11 @@
+*.retry
+*.~
+*.bak
+*~*
+*.orig
+.idea/
+*.iml
+
+### Visual Studio Code #################################
+*.code-workspace
+.vscode/*
