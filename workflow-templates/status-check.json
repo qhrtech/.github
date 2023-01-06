@@ -1,0 +1,4 @@
+{
+  "name": "QHR Trigger Status Check",
+  "description": "Used to trigger a status check on pull requests so that branch protections will execute. Not required when using other status checks."
+}
