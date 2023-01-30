@@ -1,0 +1,11 @@
+name: Maintain Version Branches
+on:
+  push:
+    tags:
+    - "*"
+
+jobs:
+  branches:
+    name: Check Branches
+    uses: qhrtech/gh-workflow-version-branches/.github/workflows/branch-versioning.yml@v1
+    secrets: inherit
