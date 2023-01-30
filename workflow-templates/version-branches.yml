@@ -1,3 +1,5 @@
+# See https://github.com/qhrtech/gh-workflow-version-branches#prerequisites for required settings on repo.
+
 name: Maintain Version Branches
 on:
   push:
