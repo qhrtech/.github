@@ -1,0 +1,4 @@
+{
+    "name": "QHR Version Branch",
+    "description": "Maintains version branches (i.e. v2) based on tags in repo."
+}
