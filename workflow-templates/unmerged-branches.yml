@@ -1,0 +1,19 @@
+# Update the inputs to the job for your team and repo's base branch.
+# You must add the "GitHub Action" app to your slack channel.
+
+name: Check for Unmerged Changes
+on:
+  workflow_dispatch: {}
+  schedule:
+    # 8AM UTC (Midnight or 1AM Pacific Time)
+    - cron: "0 8 * * 2-6"
+
+
+jobs:
+  branches:
+    name: Check Branches
+    uses: qhrtech/gh-workflow-check-unmerged-branches/.github/workflows/check-branches.yml@v1
+    secrets: inherit
+    with:
+      slack-channel: "#<team slack channel>"
+      base-branch: "<base branch>"

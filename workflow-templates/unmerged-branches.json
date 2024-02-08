@@ -1,0 +1,4 @@
+{
+    "name": "QHR Detect Unmerged Release Branches",
+    "description": "Detects if changes in release branches have not been merged to the base development branch."
+}
