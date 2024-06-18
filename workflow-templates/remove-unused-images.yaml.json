@@ -1,0 +1,4 @@
+{
+    "name": "QHR Remove Unused Image Versions",
+    "description": "Removed unused image versions from a gitops repository."
+}

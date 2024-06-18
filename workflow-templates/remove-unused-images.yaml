@@ -1,0 +1,13 @@
+# See https://github.com/qhrtech/gh-workflow-image-cleanup#prerequisites for required settings on repo.
+
+name: "Remove Unused Image Builds"
+on:
+  workflow_dispatch: {}
+  schedule:
+      - cron: "0 8 * * *" # Midnight PST (Cron is in UTC)
+
+jobs:
+  branches:
+    name: Check Images Versions
+    uses: qhrtech/gh-workflow-image-cleanup/.github/workflows/remove-unused-images.yml@v1
+    secrets: inherit
